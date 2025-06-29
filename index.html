@@ -1,59 +1,28 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>Document</title>
-        <link rel = "stylesheet" href = "styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
     
-    <body>
-        <form class = "weatherform">
-            <input type = "text" class = "cityInput" placeholder = "Enter city">
-            <button type = "submit">Get Weather</button>
-        </form>
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="weatherform">
+        <input type="text" class="cityInput" placeholder="Enter city">
+        <button type="submit">Get Weather</button>
+    </form>
 
-        <div class = "card" style = "display: none">
-        </div>
-        <div class="forecast">
-            <h4>7-Day Forecast</h4>
-                    <div class = "forecastRow">
-                    <div class="forecastItem">
-                        <h2>SUN</h2>
-                        <h3>🌦️</h3>
-                        <p> 23°/13° Light rain</p>
-                    </div>
-                    <div class="forecastItem">
-                        <h2>MON</h2>
-                        <h3>🌦️</h3>
-                        <p>23°/16° Light rain</p>
-                        </div>
-                    <div class="forecastItem">
-                        <h2>TUE</h2>
-                        <h3>⛅</h3>
-                        <p>23°/14° Partly cloudy</p>
-                    </div>
-                    <div class="forecastItem">
-                        <h2>WED</h2>
-                        <h3>⛅</h3>
-                        <p>23°/14° Partly cloudy</p>
-                    </div>
-                    <div class="forecastItem">
-                        <h2>THUR</h2>
-                        <h3>🌦️</h3>
-                        <p>23°/15° Partly cloudy</p>
-                    </div>  
-                    <div class="forecastItem">
-                        <h2>FRI</h2>
-                        <h3>🌧️</h3>
-                        <p>23°/14° Rainy</p>
-                    </div>
-                    <div class="forecastItem">
-                        <h2>SAT</h2>
-                        <h3>⛅</h3>
-                        <p>23°/13° Partly cloudy</p>
-                    </div>
-        </div>
-        <script src = "API.js"></script>
-    </body>
+    <div class="card" style="display: none"></div>
+
+    <div class="forecast" style="display: none">
+        <h4>5-Day Forecast</h4>
+        <div class="forecastRow"></div>
+    </div>
+
+    <script src="API.js"></script>
+</body>
 </html>
