@@ -35,6 +35,9 @@ button[type="submit"]:hover{
     background-color: hsl(194, 90%, 49%);
 }
 .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: rgba(255, 255, 255, 0.25); /* translucent white */
     border-radius: 20px; /* rounded corners */
     box-shadow:0 0 20px rgba(0, 0, 0, 0.1);     /* soft shadow */
@@ -54,16 +57,16 @@ p{
     align-items: center;
 }
 .cityDisplay, .tempDisplay{
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: hsla(0, 0%, 0%, 0.75%);
-    margin-bottom: 25px;
+    color: black;
+    margin-bottom: 5px;
     align-items: center;
 }
 .humidityDisplay{
     font-weight: bold;
-    margin-bottom: 25px;
-    align-items: center;
+    margin-bottom: 5px;
+   
 }
 .descDisplay{
     font-style: italic;
@@ -73,7 +76,7 @@ p{
 }
 .weatherEmoji{
 	margin: 0;
-	font-size: 7.5rem;
+	font-size: 1.5rem;
     align-items: center;
 }
 .errorDisplay{
@@ -82,7 +85,7 @@ p{
 	color: hsla(0, 0%, 0%, 0.75%);
 }
 .forecast {
-      margin-top: 20px;
+      margin-top: 10px;
       text-align: left;
 }
 .forecast-item {
